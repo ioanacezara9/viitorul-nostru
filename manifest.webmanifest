@@ -1,0 +1,17 @@
+{
+  "name": "Viitorul nostru",
+  "short_name": "Viitorul nostru",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff1f7",
+  "theme_color": "#fff1f7",
+  "description": "Un mic univers creat pentru Oana.",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
