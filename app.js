@@ -28,13 +28,13 @@ updateAnniversaryCountdown();
 setInterval(updateAnniversaryCountdown, 1000);
 
 const reasons = [
-  "Pentru că zâmbetul tău face chiar și o zi obișnuită să pară magică.",
-  "Pentru că mă faci să râd cum nimeni altcineva nu reușește.",
-  "Pentru că iubesc toate expresiile tale și momentele tale poznașe.",
+  "Pentru zambetul tau.",
+  "Pentru că mă faci să râd.. si eu rad rar ca prostu)).",
+  "Pentru că iubesc toate expresiile tale.",
   "Pentru că, atunci când sunt cu tine, lumea pare mai blândă.",
-  "Pentru că fiecare aventură e mai frumoasă când ești lângă mine.",
+  "Pentru că fiecare experienta e mai frumoasă când ești lângă mine.",
   "Pentru că descopăr mereu ceva nou și minunat la tine.",
-  "Pentru că vreau să adun alături de tine amintiri, mari și mici.",
+  "Pentru că vreau să adun alături de tine amintiri frumoase",
   "Pentru că, dintre toți oamenii din lume, eu te aleg pe tine. ♡"
 ];
 let reasonIndex = 0;
