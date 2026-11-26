@@ -28,13 +28,13 @@ updateAnniversaryCountdown();
 setInterval(updateAnniversaryCountdown, 1000);
 
 const reasons = [
-  "Pentru zâmbetul tău",
-  "Pentru că mă faci să râd... si eu rad rar ca prostu))",
-  "Pentru că iubesc toate expresiile tale.",
+  "Pentru că zâmbetul tău face chiar și o zi obișnuită să pară magică.",
+  "Pentru că mă faci să râd cum nimeni altcineva nu reușește.",
+  "Pentru că iubesc toate expresiile tale și momentele tale poznașe.",
   "Pentru că, atunci când sunt cu tine, lumea pare mai blândă.",
-  "Pentru că fiecare experienta e mai frumoasă când ești lângă mine.",
+  "Pentru că fiecare aventură e mai frumoasă când ești lângă mine.",
   "Pentru că descopăr mereu ceva nou și minunat la tine.",
-  "Pentru că vreau să adun alături de tine amintiri frumoase",
+  "Pentru că vreau să adun alături de tine amintiri, mari și mici.",
   "Pentru că, dintre toți oamenii din lume, eu te aleg pe tine. ♡"
 ];
 let reasonIndex = 0;
@@ -88,3 +88,29 @@ document.getElementById("openSecret").addEventListener("click", () => {
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 }
+
+
+// Numărătoare inversă până la data estimată a nașterii: 2 iulie 2027.
+function updateBabyCountdown() {
+  const now = new Date();
+  const target = new Date(2027, 6, 2, 0, 0, 0);
+  const diff = Math.max(0, target.getTime() - now.getTime());
+  const day = 24 * 60 * 60 * 1000;
+  const hour = 60 * 60 * 1000;
+  const minute = 60 * 1000;
+  const days = Math.floor(diff / day);
+  const hours = Math.floor((diff % day) / hour);
+  const minutes = Math.floor((diff % hour) / minute);
+  const seconds = Math.floor((diff % minute) / 1000);
+
+  document.getElementById("babyCountDays").textContent = String(days);
+  document.getElementById("babyCountHours").textContent = String(hours).padStart(2, "0");
+  document.getElementById("babyCountMinutes").textContent = String(minutes).padStart(2, "0");
+  document.getElementById("babyCountSeconds").textContent = String(seconds).padStart(2, "0");
+  document.getElementById("babyCountdownNote").textContent =
+    diff === 0
+      ? "Bine ai venit pe lume, minunea noastră! Te iubim! ♡"
+      : "Abia așteptăm să te ținem în brațe. Până atunci, creștem împreună în iubire. 💗";
+}
+updateBabyCountdown();
+setInterval(updateBabyCountdown, 1000);

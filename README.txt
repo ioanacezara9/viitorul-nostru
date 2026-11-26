@@ -52,3 +52,6 @@ ACTUALIZARE: NUMARATOARE INVERSA
 Pagina include acum o numaratoare inversa live pana la urmatoarea aniversare,
 25 iulie 2027. Dupa aceasta data, numaratoarea va trece automat la urmatoarea
 aniversare anuala.
+
+
+Actualizare: versiunea include două numărători inverse: aniversarea din 25 iulie și data estimată a nașterii bebelușului, 2 iulie 2027. Data nașterii este orientativă și trebuie confirmată de medic.
